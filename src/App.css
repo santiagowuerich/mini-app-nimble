@@ -1,0 +1,141 @@
+.app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.email-step,
+.job-list {
+  margin-bottom: 2rem;
+}
+
+.email-step h2,
+.job-list h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.email-step p,
+.job-list > p {
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: light) {
+  .email-step p,
+  .job-list > p {
+    color: #555;
+  }
+}
+
+.email-step form,
+.job-item form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.email-step input,
+.job-item input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.6em 0.8em;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  .email-step input,
+  .job-item input {
+    border-color: #ccc;
+    background: #fff;
+    color: #213547;
+  }
+}
+
+.email-step input:focus,
+.job-item input:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+.job-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-item {
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .job-item {
+    border-color: #e0e0e0;
+  }
+}
+
+.job-item h3 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.job-item .error {
+  margin: 0.5rem 0 0;
+  color: #f66;
+  font-size: 0.9rem;
+}
+
+.job-item .success {
+  margin: 0.5rem 0 0;
+  color: #6a6;
+  font-size: 0.9rem;
+}
+
+.email-step .error {
+  margin-top: 0.75rem;
+  color: #f66;
+  font-size: 0.9rem;
+}
+
+.loading {
+  margin: 1rem 0;
+  opacity: 0.8;
+}
+
+.candidate-info {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background: rgba(100, 108, 255, 0.15);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .candidate-info {
+    background: rgba(100, 108, 255, 0.1);
+  }
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
