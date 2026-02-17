@@ -34,6 +34,7 @@ export function ListaPosiciones({ candidate, jobs, onApplySuccess }: ListaPosici
         uuid: candidate.uuid,
         jobId: job.id,
         candidateId: candidate.candidateId,
+        applicationId: candidate.applicationId,
         repoUrl,
       })
       setSuccessByJob((prev) => ({ ...prev, [job.id]: true }))
